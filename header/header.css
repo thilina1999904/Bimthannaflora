@@ -85,6 +85,8 @@
     padding: 0.5rem 1rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     overflow: hidden;
+    position: relative;
+    z-index: 200;
 }
 
 .nav--links.active {
@@ -250,6 +252,8 @@
     padding: .7rem .8rem;
     cursor: pointer;
     transition: background 0.3s ease;
+    font-family: rosabelia;
+    font-size: 1rem;
 }
 
 .header--bottom button:hover {
@@ -265,14 +269,22 @@
     .nav--links {
         width: 50%;
         margin-top: 1rem;
-        position: absolute;
-        right: 0;
-        background-color: var(--primary-color);
+        position: relative;
+        float: right;
+        background-color: var(--white);
+        z-index: 200;
     }
 }
 
+@media (min-width:768px) {
+ 
+.header--div1 {
+    padding: 1rem 4rem;
+    
+}}
+
 /* -------------start dekstop nav bar-------------- */
-@media(min-width:1238px) {
+@media(min-width:1265px) {
     .mobile-navbar {
         display: none;
     }
@@ -285,7 +297,7 @@
         background-color: var(--primary-color);
         padding: 0 4rem;
         width: 100%;
-        position: fixed;
+        /* position: fixed; */
 
     }
 
@@ -346,7 +358,7 @@
     .desktop--nav--links ul {
         display: flex;
         flex-direction: row;
-        gap: 1.5rem;
+        gap: 3rem;
         justify-content: center;
         align-items: center;
         margin-bottom: 1rem;
@@ -382,6 +394,7 @@
         color: var(--white);
         font-family: rosabelia;
         text-decoration: none;
+        font-size: 1rem;
     }
 
     .desktopbutton:hover {
