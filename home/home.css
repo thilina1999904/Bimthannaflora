@@ -108,6 +108,22 @@ body {
     font-size: 2rem;
 }
 
+.hero--button button {}
+
+
+.hero--button button {
+    background-color: var(--color-accent);
+    color: var(--white);
+    border: none;
+    padding: .7rem .8rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: rosabelia;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+
 .hero--arrow {
     position: absolute;
     top: 50%;
@@ -272,13 +288,13 @@ body {
 
 .home--sec1--div1 {
     margin: 2rem 1rem;
- 
+
 }
 
 
-.home--sec1--div2 {     
+.home--sec1--div2 {
     max-width: 1600px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .home--sec1--left {
@@ -289,11 +305,18 @@ body {
     padding: 1rem;
 }
 
-.sec1--title .span1 {
+.home--sec1--left .sec1--title {
+    display: flex;
+    justify-content: start;
+}
+
+.home--sec1--left .sec1--title .span1 {
     font-family: flority;
     font-size: 1.5rem;
     color: var(--color-accent);
-    text-align: justify;
+    display: flex;
+    justify-content: start;
+    text-align: left;
     ;
 }
 
@@ -301,10 +324,11 @@ body {
     text-align: justify;
 }
 
-.sec1--content .span2 {
+.sec1--content .content-body {
     text-align: justify;
     color: var(--text-black);
     font-family: poppins-extralight;
+    line-height: 1.6;
 }
 
 
@@ -367,7 +391,7 @@ body {
 }
 
 @media(min-width:768px) {
-  
+
 
     .home--sec1--div1 {
         margin: 5rem 4rem 0 4rem;
@@ -382,14 +406,14 @@ body {
 
 @media(min-width:1024px) {
 
-      .sec1--middle--img {
+    .sec1--middle--img {
         display: block;
     }
 
-        .sec1--middle--img {
+    .sec1--middle--img {
         display: flex;
         justify-content: center;
-        
+
 
     }
 
@@ -400,9 +424,11 @@ body {
         z-index: 100;
         top: 140%;
     }
+
     .home--sec1--div2 {
         gap: 3rem;
     }
+
     .home--sec1--div1 {
         height: 80vh;
     }
@@ -482,7 +508,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.sec2--content .span2 {
+.topic--section .sec2--content .content {
     font-family: poppins-extralight;
     color: var(--text-black);
     line-height: 1.6;
@@ -551,7 +577,7 @@ body {
     background-color: var(--white);
     position: relative;
     z-index: 100;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
     top: -5rem;
     margin: auto;
     float: right;
@@ -588,7 +614,7 @@ body {
     background: var(--color-accent);
     padding: 0.5rem 0.9rem;
     border-radius: 50%;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     transition: background 0.3s ease, color 0.3s ease;
 }
 
@@ -602,18 +628,24 @@ body {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.95); }
-    to { opacity: 1; transform: scale(1); }
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
-@media (min-width: 768px){
-    .home--sec2--div1{
+@media (min-width: 768px) {
+    .home--sec2--div1 {
         margin: 6rem 4rem 3rem;
     }
-    .sec2--content .span2{
-        width: 100%;
-        text-align: center;
 
+    .topic--section .sec2--content .content {
+        text-align: center;
     }
 }
 
@@ -644,15 +676,16 @@ body {
 @media (min-width: 1000px) {
 
     .sec2--title .span1 {
-    font-family: flority;
-    font-size: 2rem;
-}
+        font-family: flority;
+        font-size: 2rem;
+    }
+
     .card--section {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
         max-width: 1600px;
-        align-items: start; 
+        align-items: start;
     }
 
     .card--section .card {
@@ -675,10 +708,12 @@ body {
     .card--section i {
         display: none !important;
     }
-    .topic--section{
+
+    .topic--section {
         margin-bottom: 0;
     }
-    .sec2--button{
+
+    .sec2--button {
         margin-bottom: 0;
     }
 }
@@ -691,11 +726,23 @@ body {
 /* -------------home sec4 starts ---------- */
 .home--sec4--div1 {
     /* background-color: red; */
-    padding: 0rem 1rem 4rem;  background-image: url('../resources/images/home1/testamonial//Rectangle\ 22.png');
+
 }
 
 .home--sec4--div2 {
     /* background-color: blue; */
+    padding: 2rem 1rem;
+    background-image: url('../resources/images/home1/testamonial//Rectangle\ 22.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.home--sec4--div2 .body {
+    max-width: 1730px;
+    margin: 0 auto;
 }
 
 .home--sec4--title {
@@ -703,6 +750,7 @@ body {
     color: var(--color-accent);
     text-align: center;
     font-size: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .home--sec4--content {
@@ -711,36 +759,20 @@ body {
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 1rem;
-  
-    z-index: 5000;
-    position: relative; /* Required for positioning pseudo-elements */
-    overflow: hidden; /* Ensures quotes stay within borders */
+    z-index: 5;
+    position: relative;
+    /* Required for positioning pseudo-elements */
+    overflow: hidden;
+    /* Ensures quotes stay within borders */
 }
 
 /* Add double commas (quotes) to the border */
-.home--sec4--content::before {
-    content: '“'; /* Double opening quote (Unicode) */
-    position: absolute;
-    top: 0;
-    /* top: -1.5rem; */
-    left: 50%;
-    font-size: 4em;
-    color: var(--color-accent);
-    z-index: 1;
-}
 
-.home--sec4--content::after {
-    content: '„'; /* Double closing quote (Unicode) */
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    font-size: 4em;
-    color: var(--color-accent);
-    z-index: 1;
-}
 
-.home--sec4--content .span2 {
+.home--sec4--content .span22 {
     color: var(--text-black);
     font-family: poppins-regular;
     text-align: center;
@@ -753,12 +785,25 @@ body {
     text-align: center;
 }
 
+.home--sec4--content img {
+    margin: 1rem;
+    /* margin-bottom: 2rem; */
+    width: 40px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
 .client--name {
     text-align: center;
     margin-top: 1rem;
 }
 
 .move--button {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: .5rem;
     float: right;
     margin-top: 0.5rem;
     cursor: pointer;
@@ -778,17 +823,25 @@ body {
 }
 
 @media (min-width: 768px) {
-    .home--sec4--div1 {
-        padding: 5rem 4rem 8rem;
+    .home--sec4--div2 {
+        padding: 0;
     }
+
+    .body {
+        padding: 2rem 4rem 2rem;
+    }
+
     .home--sec4--content {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-        height: 30vh;
+        height: 40vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        /* gap: 3rem; */
+    }
+}
+
+@media (min-width: 1024px) {
+    .home--sec4--title {
+        font-size: 2.1rem;
     }
 }
 

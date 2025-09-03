@@ -28,6 +28,10 @@
                         <span class="span1">Unforgettable</span>
                         <span class="span1">Memories</span>
                     </div>
+
+                    <div class="hero--button">
+                        <a href=""><button>Bloom With US</button></a>
+                    </div>
                 </div>
 
                 <div class="hero--arrow">
@@ -57,7 +61,7 @@
                     </div>
 
                     <div class="sec1--content">
-                        <span class="span2">
+                        <span class="content-body">
                             At Bimthanna Flora, we redefine elegance through the art of floral design. With a
                             passion for detail and a flair for sophistication, we curate bespoke arrangements that embody luxury and grace. Every bloom is handpicked,
                             every design is timeless—crafted to elevate your celebration into a masterpiece.
@@ -96,7 +100,7 @@
                     </div>
 
                     <div class="sec2--content">
-                        <span class="span2">
+                        <span class="content">
                             we believe every wedding is a reflection of love, personality, and unforgettable moments.
                             Our work is about blending creativity with thoughtful design to craft
                             events that feel authentic and unique to each couple.
@@ -178,16 +182,19 @@
 
     <section>
         <div class="home--sec4--div1">
-
+            <div class="home--sec4--title">
+                <span class="span1">
+                    Love Notes From Happy Hearts
+                </span>
+            </div>
 
             <div class="home--sec4--div2">
-                <div class="home--sec4--title">
-                    <span class="span1">
-                        Love Notes From Happy Hearts
-                    </span>
-                </div>
+
+            <div class="body">
+
                 <div class="home--sec4--content">
-                    <span class="span2" id="testimonial-text">
+                    <img src="../resources/images/home1/testamonial/comma.png" alt="">
+                    <span class="span22" id="testimonial-text">
                         Bimthanna Flora made our wedding unforgettable! Every detail,
                         from the poruwa to the entrance décor, was filled with love and elegance.
                         The flowers were breathtaking, and we felt like we were in a dream.
@@ -197,6 +204,8 @@
                     <div class="client--name">
                         <span class="span3" id="client-name">Supun & Shanika</span>
                     </div>
+
+                     <img src="../resources/images/home1/testamonial/comma2.png" alt="">
                 </div>
 
                 <div class="move--button">
@@ -205,6 +214,7 @@
                 </div>
 
 
+            </div>
             </div>
         </div>
     </section>
